@@ -3,127 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hillary Nana Yaa Owusu | Resume</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            text-align: center;
-            padding: 20px 0;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 1rem;
-            color: #555;
-        }
-        section {
-            margin: 20px 0;
-        }
-        section h2 {
-            font-size: 1.5rem;
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 10px 0;
-        }
-        .contact a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .contact a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Hillary N. Owusu - PhD Researcher</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Hillary Nana Yaa Owusu</h1>
-            <p>Email: <a href="mailto:hnyowusu@umd.edu">hnyowusu@umd.edu</a> | Phone: 240-946-1078</p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/hillarynanayaaowusu" target="_blank">linkedin.com/in/hillarynanayaaowusu</a></p>
-        </header>
+<body class="bg-gray-50">
+    <!-- Header/Hero Section -->
+    <header class="bg-white shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 py-16">
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                <!-- Profile Picture -->
+                <div class="w-48 h-48 rounded-full overflow-hidden shadow-lg flex-shrink-0">
+                    <img src="/api/placeholder/192/192" alt="Hillary N. Owusu" class="w-full h-full object-cover">
+                </div>
+                
+                <!-- Header Content -->
+                <div>
+                    <h1 class="text-4xl font-bold text-gray-900 mb-4">Hillary N. Owusu</h1>
+                    <p class="text-xl text-gray-600 mb-4">PhD Candidate in Computer Science</p>
+                    <p class="text-gray-600 mb-6">University of Maryland-College Park</p>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="mailto:hnyowusu@umd.edu" class="text-gray-600 hover:text-gray-900">
+                            <i class="fas fa-envelope text-2xl"></i>
+                        </a>
+                        <a href="https://github.com/hillaryowusu" class="text-gray-600 hover:text-gray-900">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/hillarynanayaaowusu" class="text-gray-600 hover:text-gray-900">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-        <section>
-            <h2>Summary</h2>
-            <p>PhD student specializing in Machine Learning and Artificial Intelligence, skilled in developing and evaluating advanced models. Proficient in Python, C, and Java with expertise in NLP, computer vision, and systems engineering. Seeking opportunities to contribute to impactful projects and expand technical expertise.</p>
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-12">
+        <!-- About Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">About Me</h2>
+            <div class="bg-white rounded-lg shadow p-6">
+                <p class="text-gray-600 mb-4">
+                    I'm a PhD candidate in Computer Science at UMD, specializing in machine unlearning for personalized AI. 
+                    My research focuses on optimizing language models while balancing efficiency and user relevance. 
+                    I'm passionate about bridging research and practice through technical writing and teaching.
+                </p>
+            </div>
         </section>
 
-        <section>
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <strong>Ph.D. in Computer Science</strong>  
-                    <p>University of Maryland, College Park (Expected: May 2028)</p>
-                    <p>Relevant Courses: Algorithms in Machine Learning, NLP, Advances in XR</p>
-                </li>
-                <li>
-                    <strong>BSc in Telecommunications Engineering</strong>
-                    <p>Kwame Nkrumah University of Science and Technology (Nov 2021)</p>
-                </li>
-            </ul>
+        <!-- Research Projects -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Research</h2>
+            <div class="grid gap-6">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-book text-blue-600 mr-4 text-2xl"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                                Neural Pruning for Targeted Forgetting in Language Models
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Pioneered a selective pruning method achieving 87.6% neuron removal with only 7.5% syntactic loss. 
+                                Reduced model size by 32.4% while maintaining NLP performance.
+                            </p>
+                            <div class="flex gap-4">
+                                <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800">
+                                    <i class="fas fa-code mr-2"></i> Code
+                                </a>
+                                <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800">
+                                    <i class="fas fa-file-alt mr-2"></i> Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow p-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-book text-blue-600 mr-4 text-2xl"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                                Adversarial Analysis of Membership Inference Attacks
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Developed an attack pipeline detecting memorization artifacts in GPT-2 with 97.3% accuracy. 
+                                Reduced attack success rates by 41.2% through novel mitigation techniques.
+                            </p>
+                            <div class="flex gap-4">
+                                <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800">
+                                    <i class="fas fa-code mr-2"></i> Code
+                                </a>
+                                <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800">
+                                    <i class="fas fa-file-alt mr-2"></i> Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Technical Skills</h2>
-            <ul>
-                <li>Programming: Python, C, Java, R</li>
-                <li>Tools & Frameworks: TensorFlow, PyTorch, Unity</li>
-                <li>Cloud Platforms: AWS, Azure</li>
-                <li>Specialties: Machine Learning, NLP, Computer Vision</li>
-            </ul>
+        <!-- Blog Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Technical Writing</h2>
+            <div class="bg-white rounded-lg shadow p-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">CuriousLM Blog</h3>
+                <p class="text-gray-600 mb-6">
+                    Making AI, machine learning, and NLP research accessible to a broader audience. 
+                    Writing about large language models, model pruning, bias in AI, and real-world applications.
+                </p>
+            </div>
         </section>
 
-        <section>
-            <h2>Research Projects</h2>
-            <ul>
-                <li>
-                    <strong>Gender Bias in English-Twi Machine Translation</strong>
-                    <p>Evaluated translation bias using BLEU and COMET metrics; automated dataset generation and challenge testing.</p>
-                </li>
-                <li>
-                    <strong>Securing ChatGPT: Mitigating Membership-Inference Attacks</strong>
-                    <p>Developed attack models and countermeasures to enhance AI privacy and robustness.</p>
-                </li>
-                <li>
-                    <strong>ASL Tutor with Deep Pose Estimation</strong>
-                    <p>Designed an interactive ASL learning system using Unity and machine learning.</p>
-                </li>
-            </ul>
+        <!-- Teaching Experience -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Teaching</h2>
+            <div class="bg-white rounded-lg shadow p-6">
+                <div class="flex items-start">
+                    <i class="fas fa-users text-green-600 mr-4 text-2xl"></i>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Courses</h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li>C Programming</li>
+                            <li>Data Science</li>
+                            <li>Algorithms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
+    </main>
 
-        <section>
-            <h2>Awards & Recognitions</h2>
-            <ul>
-                <li>Top 2% in Financial Inclusion ML Competition by Zindi Africa (2020)</li>
-                <li>Winner, STEM 4G Mobile App Competition (2018)</li>
-                <li>Top 5, Zindi ML Hackathon</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Contact</h2>
-            <p>Feel free to reach out for opportunities or collaborations!</p>
-        </section>
-    </div>
+    <!-- Footer -->
+    <footer class="bg-white border-t">
+        <div class="max-w-4xl mx-auto px-4 py-8">
+            <p class="text-center text-gray-600">
+                © 2025 Hillary N. Owusu. All rights reserved.
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
