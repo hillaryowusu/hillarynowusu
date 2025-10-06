@@ -1,147 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hillary N. Owusu - PhD Researcher</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hillary N. Owusu — Research</title>
+  <meta name="description" content="Hillary N. Owusu — Ph.D. student in Computer Science at UMD. Research: intersection of Machine Learning and Cognitive Science, mechanistic interpretability, and Responsible AI." />
+
+  <meta property="og:title" content="Hillary N. Owusu — Research" />
+  <meta property="og:description" content="Ph.D. student in Computer Science (UMD). Research at the intersection of Machine Learning and Cognitive Science — using ML to understand cognition and improve human-AI interaction." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hillary N. Owusu",
+    "jobTitle": "Ph.D. Student, Computer Science",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Maryland"
+    },
+    "email": "mailto:hnyowusu@umd.edu",
+    "url": "https://hillaryowusu.github.io/hillarynowusu/",
+    "sameAs": [
+      "https://openreview.net/profile?id=%7EHillary_Nana_Yaa_Owusu1",
+      "https://scholar.google.com/citations?hl=en&user=TQpn1z8AAAAJ",
+      "https://github.com/hillaryowusu",
+      "https://www.linkedin.com/in/hillarynanayaaowusu/",
+      "https://declutter-your-laptop-free-your-life.hashnode.dev/"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0b1020;
+      --text: #e8ebf7;
+      --muted: #b8c1ec;
+      --accent: #78ffd6;
+      --accent-2: #a8e0ff;
+      --border: #263055;
+      --card: #0f1530;
+    }
+    body {margin:0;font-family:system-ui;background:#0b1020;color:var(--text);line-height:1.6;}
+    header {position:sticky;top:0;backdrop-filter:blur(6px);background:rgba(11,16,32,0.8);border-bottom:1px solid var(--border);}
+    .nav {max-width:1040px;margin:auto;padding:0.6rem 1rem;display:flex;justify-content:space-between;align-items:center;}
+    .nav a {color:var(--text);text-decoration:none;margin-left:1rem;}
+    .nav a:hover {color:var(--accent);}
+    .wrap {max-width:1040px;margin:auto;padding:1.25rem;}
+    .hero {display:grid;grid-template-columns:1.2fr 0.8fr;gap:2rem;align-items:center;padding:3rem 0 1rem;}
+    .hero h1 {font-size:clamp(2rem,5vw,3rem);}
+    .hero p.lead {color:var(--muted);font-size:1.1rem;}
+    .btn {padding:0.6rem 0.9rem;border-radius:12px;border:1px solid var(--border);background:#141a3a;color:var(--text);text-decoration:none;font-weight:600;}
+    .btn:hover {border-color:var(--accent-2);}
+    .card {background:#0f1530;border:1px solid var(--border);border-radius:16px;padding:1.2rem;margin-bottom:1rem;}
+    .section {padding:1.5rem 0;}
+    footer {border-top:1px solid var(--border);padding:1.2rem 0;text-align:center;color:var(--muted);}
+  </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Header/Hero Section -->
-    <header class="bg-white shadow-sm">
-        <div class="max-w-4xl mx-auto px-4 py-16">
-            <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
-                <!-- Profile Picture -->
-                <div class="w-48 h-48 rounded-full overflow-hidden shadow-lg flex-shrink-0">
-                    <img src="/api/placeholder/192/192" alt="Hillary N. Owusu" class="w-full h-full object-cover">
-                </div>
-                
-                <!-- Header Content -->
-                <div>
-                    <h1 class="text-4xl font-bold text-gray-900 mb-4">Hillary N. Owusu</h1>
-                    <p class="text-xl text-gray-600 mb-4">PhD Candidate in Computer Science</p>
-                    <p class="text-gray-600 mb-6">University of Maryland-College Park</p>
-                    <div class="flex space-x-4 mb-4">
-                        <a href="mailto:hnyowusu@umd.edu" class="text-gray-600 hover:text-gray-900">
-                            <i class="fas fa-envelope text-2xl"></i>
-                        </a>
-                        <a href="https://github.com/hillaryowusu" class="text-gray-600 hover:text-gray-900">
-                            <i class="fab fa-github text-2xl"></i>
-                        </a>
-                        <a href="https://linkedin.com/in/hillarynanayaaowusu" class="text-gray-600 hover:text-gray-900">
-                            <i class="fab fa-linkedin text-2xl"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="#top"><strong>Hillary N. Owusu</strong></a>
+      <div class="right">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#service">Service</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top" class="wrap">
+    <section class="hero">
+      <div>
+        <span class="badge">Ph.D. Student · Computer Science · UMD</span>
+        <h1>Machine Learning × Cognitive Science</h1>
+        <p class="lead">My research lies at the intersection of machine learning and cognitive science. I explore how cognitive principles like bias, reasoning, and belief updating can illuminate how AI systems learn and behave — and how machine learning models can, in turn, help us understand the human mind. My goal is to build interpretable, human-centered AI tools that enhance how people interact with intelligent systems.</p>
+        <div class="cta">
+          <a class="btn" href="/Owusu_CV.pdf" target="_blank">CV (PDF)</a>
+          <a class="btn" href="https://openreview.net/profile?id=%7EHillary_Nana_Yaa_Owusu1" target="_blank">OpenReview</a>
+          <a class="btn" href="https://scholar.google.com/citations?hl=en&user=TQpn1z8AAAAJ" target="_blank">Google Scholar</a>
+          <a class="btn" href="https://github.com/hillaryowusu" target="_blank">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/hillarynanayaaowusu/" target="_blank">LinkedIn</a>
+          <a class="btn" href="https://declutter-your-laptop-free-your-life.hashnode.dev/" target="_blank">Blog · CuriousLM</a>
         </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="max-w-4xl mx-auto px-4 py-12">
-        <!-- About Section -->
-        <section class="mb-16">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">About Me</h2>
-            <div class="bg-white rounded-lg shadow p-6">
-                <p class="text-gray-600 mb-4">
-                    I'm a PhD candidate in Computer Science at UMD, specializing in machine unlearning for personalized AI. 
-                    My research focuses on optimizing language models while balancing efficiency and user relevance. 
-                    I'm passionate about bridging research and practice through technical writing and teaching.
-                </p>
-            </div>
-        </section>
-
-        <!-- Research Projects -->
-        <section class="mb-16">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">Research</h2>
-            <div class="grid gap-6">
-                <div class="bg-white rounded-lg shadow p-6">
-                    <div class="flex items-start">
-                        <i class="fas fa-book text-blue-600 mr-4 text-2xl"></i>
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">
-                                Neural Pruning for Targeted Forgetting in Language Models
-                            </h3>
-                            <p class="text-gray-600 mb-4">
-                                Pioneered a selective pruning method achieving 87.6% neuron removal with only 7.5% syntactic loss. 
-                                Reduced model size by 32.4% while maintaining NLP performance.
-                            </p>
-                            <div class="flex gap-4">
-                                <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800">
-                                    <i class="fas fa-code mr-2"></i> Code
-                                </a>
-                                <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800">
-                                    <i class="fas fa-file-alt mr-2"></i> Paper
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-lg shadow p-6">
-                    <div class="flex items-start">
-                        <i class="fas fa-book text-blue-600 mr-4 text-2xl"></i>
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">
-                                Adversarial Analysis of Membership Inference Attacks
-                            </h3>
-                            <p class="text-gray-600 mb-4">
-                                Developed an attack pipeline detecting memorization artifacts in GPT-2 with 97.3% accuracy. 
-                                Reduced attack success rates by 41.2% through novel mitigation techniques.
-                            </p>
-                            <div class="flex gap-4">
-                                <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800">
-                                    <i class="fas fa-code mr-2"></i> Code
-                                </a>
-                                <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-800">
-                                    <i class="fas fa-file-alt mr-2"></i> Paper
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Blog Section -->
-        <section class="mb-16">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">Technical Writing</h2>
-            <div class="bg-white rounded-lg shadow p-6">
-                <h3 class="text-xl font-semibold text-gray-900 mb-4">CuriousLM Blog</h3>
-                <p class="text-gray-600 mb-6">
-                    Making AI, machine learning, and NLP research accessible to a broader audience. 
-                    Writing about large language models, model pruning, bias in AI, and real-world applications.
-                </p>
-            </div>
-        </section>
-
-        <!-- Teaching Experience -->
-        <section class="mb-16">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">Teaching</h2>
-            <div class="bg-white rounded-lg shadow p-6">
-                <div class="flex items-start">
-                    <i class="fas fa-users text-green-600 mr-4 text-2xl"></i>
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Courses</h3>
-                        <ul class="space-y-3 text-gray-600">
-                            <li>C Programming</li>
-                            <li>Data Science</li>
-                            <li>Algorithms</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-white border-t">
-        <div class="max-w-4xl mx-auto px-4 py-8">
-            <p class="text-center text-gray-600">
-                © 2025 Hillary N. Owusu. All rights reserved.
-            </p>
+      </div>
+      <div>
+        <div class="card">
+          <h2>Research Themes</h2>
+          <ul>
+            <li><strong>Human-Centered AI:</strong> Designing AI systems grounded in cognitive theory to improve transparency and user experience.</li>
+            <li><strong>Mechanistic Interpretability:</strong> Understanding how LLMs represent and update internal beliefs and biases.</li>
+            <li><strong>Cognitive Modeling:</strong> Using ML to explain cognitive processes such as anchoring, decision-making, and memory.</li>
+            <li><strong>Responsible AI:</strong> Integrating ethics, fairness, and educational outreach in AI development.</li>
+          </ul>
         </div>
-    </footer>
+      </div>
+    </section>
+
+    <section id="research" class="section">
+      <h2>Research Projects</h2>
+      <div class="card">
+        <h3>Anchoring Bias Mechanisms in GPT-style Models</h3>
+        <p>Investigating how anchoring bias manifests in transformer models using belief-shift metrics (zAA, R-Error, A-Index) and causal tracing. Developing methods to mitigate bias without catastrophic forgetting.</p>
+      </div>
+      <div class="card">
+        <h3>Adversarial Analysis of Membership Inference in LLMs</h3>
+        <p>Building adversarial evaluation pipelines to detect memorization and privacy leaks in LLMs, benchmarking differential privacy and dropout mechanisms.</p>
+      </div>
+      <div class="card">
+        <h3>Bias in English↔Twi Neural Machine Translation</h3>
+        <p>Creating challenge datasets to measure gender bias in translation systems and exploring data augmentation strategies for improved fairness.</p>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <h2>Publications & Preprints</h2>
+      <div class="card">
+        <ul>
+          <li><strong>[In prep]</strong> <em>Anchoring Bias as a Circuit Phenomenon in LLMs</em> — Target: NeurIPS/ICLR.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="service" class="section">
+      <h2>Service</h2>
+      <div class="card">
+        <h3>Peer Review</h3>
+        <ul>
+          <li>Reviewer — NeurIPS 2025 Workshop on Reliable ML (3 papers). Invited via OpenReview.</li>
+          <li>Prospective: ACL Rolling Review, ICLR, ICML main tracks.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Organization & Outreach</h3>
+        <ul>
+          <li>Program Coordinator — CMSE Technical & Leadership Preparedness (TLP), UMD: designed and led applied AI workshops for undergraduate cohorts.</li>
+          <li>Research Mentor — UMD ESTEEM/SER-Quest Responsible AI Summer Research Program for High School Students.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="teaching" class="section">
+      <h2>Teaching</h2>
+      <div class="card">
+        <ul>
+          <li>Teaching Assistant: C Programming, Data Science (Python, Visualization, Statistics), Algorithms (Dynamic Programming, Graphs).</li>
+          <li>Instructor: Gradio Chatbots, Responsible AI, and ML Pipeline Fundamentals.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="blog" class="section">
+      <h2>Blog — CuriousLM</h2>
+      <div class="card">
+        <p>I write about interpretability, bias, privacy, and the practical side of building responsible, educational AI systems.</p>
+        <p><a href="https://declutter-your-laptop-free-your-life.hashnode.dev/" target="_blank">Visit CuriousLM on Hashnode</a></p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:hnyowusu@umd.edu">hnyowusu@umd.edu</a></p>
+        <p>Office: A.V. Williams Building, University of Maryland, College Park, MD</p>
+        <p>Links: <a href="https://openreview.net/profile?id=%7EHillary_Nana_Yaa_Owusu1">OpenReview</a> · <a href="https://scholar.google.com/citations?hl=en&user=TQpn1z8AAAAJ">Scholar</a> · <a href="https://github.com/hillaryowusu">GitHub</a> · <a href="https://www.linkedin.com/in/hillarynanayaaowusu/">LinkedIn</a> · <a href="https://declutter-your-laptop-free-your-life.hashnode.dev/">CuriousLM</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <small>© <span id="y"></span> Hillary N. Owusu. Last updated <span id="d"></span>.</small>
+    </div>
+  </footer>
+  <script>
+    const y=document.getElementById('y');const d=document.getElementById('d');if(y) y.textContent=new Date().getFullYear();if(d) d.textContent=new Date().toLocaleDateString(undefined,{year:'numeric',month:'short',day:'2-digit'});
+  </script>
 </body>
 </html>
